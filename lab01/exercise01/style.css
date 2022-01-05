@@ -12,10 +12,17 @@ Add some style blocks below this line to style the card.
 */
 
 section {
-    box-sizing: border-box;
-    border: dotted 1px #CCC;
-    width: 97vh;
-    height: 80vh;
-    padding: 0px;
+    border: solid 1px #CCC;
+    width: 350px;
+    padding-bottom: 20px;
     margin: 10px;
+}
+
+section h2, section p, section button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section img {
+    width: 100%;
 }
