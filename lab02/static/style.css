@@ -7,6 +7,31 @@ body {
     margin: 0;
 }
 
+main {
+    display: flex;
+    margin: 3vh;
+}
+
+section {
+    border: solid 1px #CCC;
+    width: 350px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+section h2, section p, section table{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section p {
+    line-height: 1.4em;
+}
+
+section img {
+    width: 100%;
+}
+
 header {
     padding: 3vh;
     background: #EEE;
@@ -23,15 +48,20 @@ nav ul {
     justify-content: space-between;
 }
 
-main {
-    margin: 3vh;
-}
-
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
+    main {
+        flex-wrap: wrap;
+    }
+    section {
+        width: calc(50% - 20px);
+    }
 }
 
 @media only screen and (max-width: 600px) {
     /* Media queries go here */
+    section {
+        width: 100%;
+    }
 }
